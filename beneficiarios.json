@@ -1,0 +1,10 @@
+[
+  {
+    "codigoReg": 2,
+    "associados": [
+      { "nome": "Renan", "idade": 10, "preco": 9 },
+      { "nome": "gustavo", "idade": 25, "preco": 11 }
+    ],
+    "valorTotal": 20
+  }
+]
