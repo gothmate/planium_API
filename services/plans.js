@@ -4,6 +4,8 @@ const dataPrices = require('../db/prices.json')
 var databaseBeneficiario = require('../beneficiarios.json')
 
 module.exports = function verificaPlano(obj) {
+  console.log(obj)
+
   let jsonArray = []
   databaseBeneficiario.forEach(item => {
     jsonArray.push(item)
