@@ -6,7 +6,8 @@ const dataPlans = require('../db/plans.json')
 const dataPrices = require('../db/prices.json')
 var databaseBeneficiario = require('../beneficiarios.json')
 const { request } = require('http')
-const { exceptionVidas } = require('../services/exceptions')
+const exceptionVidas = require('../services/exceptionvida')
+const exceptionRegistroNotFound = require('../services/exceptions')
 var verificaPlano = require('../services/plans')
 
 //Busca dados
@@ -26,34 +27,23 @@ routes.get('/beneficiarios', (req, res) => {
 routes.post('/add_ben', (req, res) => {
   const body = req.body
 
-  try {
-    if (!body) {
-      return res.status(400).end()
-    }
-
-    if (exceptionVidas(req.body)) {
-      return res
-        .status(400)
-        .send('Erro. O número mínimo de membros é maior que o contratado.')
-    }
-
-    verificaPlano(req.body)
-    return res.json(req.body)
-  } catch (err) {
-    return res.status(400).send(err)
+  if (!body) {
+    return res.status(400).end()
   }
-})
 
-routes.delete('/:id', (req, res) => {
-  const id = req.params.id
+  if (!exceptionRegistroNotFound(req.body)) {
+    return res.status(400).send('Esse Plano é inexistente.')
+  }
 
-  let newDB = db.filter(item => {
-    if (!item[id]) {
-      return item
-    }
-  })
-  db = newDB
-  return res.send(newDB)
+  const ex = exceptionVidas(req.body)
+  if (ex) {
+    return res
+      .status(400)
+      .send('Número de usuários abaixo da exigência do plano.')
+  }
+
+  verificaPlano(req.body)
+  return res.json(req.body)
 })
 
 module.exports = routes

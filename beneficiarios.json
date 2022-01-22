@@ -1,10 +1,122 @@
 [
   {
+    "codigoReg": 6,
+    "associados": [
+      { "nome": "Luan", "idade": 15, "preco": 55 },
+      { "nome": "ze", "idade": 20, "preco": 65 },
+      { "nome": "ze", "idade": 50, "preco": 75 }
+    ],
+    "valorTotal": 195
+  },
+  {
+    "codigoReg": 6,
+    "associados": [
+      { "nome": "Luan", "idade": 15, "preco": 55 },
+      { "nome": "ze", "idade": 20, "preco": 65 },
+      { "nome": "ze", "idade": 50, "preco": 75 }
+    ],
+    "valorTotal": 195
+  },
+  {
     "codigoReg": 2,
     "associados": [
-      { "nome": "Renan", "idade": 10, "preco": 9 },
-      { "nome": "gustavo", "idade": 25, "preco": 11 }
+      { "nome": "Luan", "idade": 15, "preco": 20 },
+      { "nome": "ze", "idade": 20, "preco": 30 },
+      { "nome": "ze", "idade": 50, "preco": 40 }
     ],
-    "valorTotal": 20
+    "valorTotal": 90
+  },
+  {
+    "codigoReg": 1,
+    "associados": [
+      { "nome": "Luan", "idade": 15, "preco": 10 },
+      { "nome": "ze", "idade": 20, "preco": 12 },
+      { "nome": "ze", "idade": 50, "preco": 15 }
+    ],
+    "valorTotal": 37
+  },
+  {
+    "codigoReg": 1,
+    "associados": [
+      { "nome": "Luan", "idade": 15, "preco": 9 },
+      { "nome": "ze", "idade": 20, "preco": 11 },
+      { "nome": "ze", "idade": 50, "preco": 14 },
+      { "nome": "ze", "idade": 50, "preco": 14 }
+    ],
+    "valorTotal": 48
+  },
+  {
+    "codigoReg": 6,
+    "associados": [
+      { "nome": "Luan", "idade": 15, "preco": 55 },
+      { "nome": "ze", "idade": 20, "preco": 65 }
+    ],
+    "valorTotal": 120
+  },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  {
+    "codigoReg": 7,
+    "associados": [{ "nome": "Luan", "idade": 15 }],
+    "valorTotal": null
+  },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  { "codigoReg": 6, "associados": [], "valorTotal": 0 },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
+  },
+  {
+    "codigoReg": 6,
+    "associados": [{ "nome": "Luan", "idade": 15, "preco": 60 }],
+    "valorTotal": 60
   }
 ]

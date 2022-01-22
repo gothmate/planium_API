@@ -14,13 +14,19 @@ module.exports = function verificaPlano(obj) {
   for (let i = 0; i < jsonArray.length; i++) {
     for (let index = 0; index < dataPlans.length; index++) {
       if (jsonArray[i].codigoReg === dataPlans[index].codigo) {
-        jsonArray[i].associados.forEach(el => {
-          if (el.idade >= 0 && el.idade < 18) {
-            el.preco = dataPrices[index].faixa1
-          } else if (el.idade >= 18 && el.idade < 41) {
-            el.preco = dataPrices[index].faixa2
-          } else if (el.idade >= 41) {
-            el.preco = dataPrices[index].faixa3
+        dataPrices.forEach(price => {
+          if (dataPlans[index].codigo === price.codigo) {
+            if (jsonArray[i].associados.length >= price.minimo_vidas) {
+              jsonArray[i].associados.forEach(el => {
+                if (el.idade >= 0 && el.idade < 18) {
+                  el.preco = price.faixa1
+                } else if (el.idade >= 18 && el.idade < 41) {
+                  el.preco = price.faixa2
+                } else if (el.idade >= 41) {
+                  el.preco = price.faixa3
+                }
+              })
+            }
           }
         })
       }
