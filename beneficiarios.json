@@ -1,1 +1,126 @@
-[{"associados":[{"nome":"Gabe","idade":"10","preco":20}],"codigoReg":2,"valorTotal":20},{"associados":[{"nome":"Mary","idade":"50","preco":40}],"codigoReg":2,"valorTotal":40},{"associados":[{"nome":"Lucas","idade":"12","preco":60}],"codigoReg":6,"valorTotal":60},{"associados":[{"nome":"Renato","idade":"10","preco":20},{"nome":"Luanna","idade":"35","preco":30},{"nome":"Pedro","idade":"29","preco":30}],"codigoReg":2,"valorTotal":80},{"associados":[{"nome":"João","idade":"78","preco":60}],"codigoReg":4,"valorTotal":60},{"associados":[{"nome":"Renan","idade":"28","preco":40},{"nome":"Lucas","idade":"18","preco":40}],"codigoReg":3,"valorTotal":80},{"associados":[{"nome":"Andreas","idade":"16","preco":10}],"codigoReg":1,"valorTotal":10},{"associados":[{"nome":"Ruan ","idade":"26","preco":65},{"nome":"Lavignia","idade":"22","preco":65}],"codigoReg":6,"valorTotal":130}]
+[
+    {
+        "associados": [
+            {
+                "nome": "Gabe",
+                "idade": "10",
+                "preco": 20
+            }
+        ],
+        "codigoReg": 2,
+        "valorTotal": 20
+    },
+    {
+        "associados": [
+            {
+                "nome": "Mary",
+                "idade": "50",
+                "preco": 40
+            }
+        ],
+        "codigoReg": 2,
+        "valorTotal": 40
+    },
+    {
+        "associados": [
+            {
+                "nome": "Lucas",
+                "idade": "12",
+                "preco": 60
+            }
+        ],
+        "codigoReg": 6,
+        "valorTotal": 60
+    },
+    {
+        "associados": [
+            {
+                "nome": "Renato",
+                "idade": "10",
+                "preco": 20
+            },
+            {
+                "nome": "Luanna",
+                "idade": "35",
+                "preco": 30
+            },
+            {
+                "nome": "Pedro",
+                "idade": "29",
+                "preco": 30
+            }
+        ],
+        "codigoReg": 2,
+        "valorTotal": 80
+    },
+    {
+        "associados": [
+            {
+                "nome": "João",
+                "idade": "78",
+                "preco": 60
+            }
+        ],
+        "codigoReg": 4,
+        "valorTotal": 60
+    },
+    {
+        "associados": [
+            {
+                "nome": "Renan",
+                "idade": "28",
+                "preco": 40
+            },
+            {
+                "nome": "Lucas",
+                "idade": "18",
+                "preco": 40
+            }
+        ],
+        "codigoReg": 3,
+        "valorTotal": 80
+    },
+    {
+        "associados": [
+            {
+                "nome": "Andreas",
+                "idade": "16",
+                "preco": 10
+            }
+        ],
+        "codigoReg": 1,
+        "valorTotal": 10
+    },
+    {
+        "associados": [
+            {
+                "nome": "Ruan ",
+                "idade": "26",
+                "preco": 65
+            },
+            {
+                "nome": "Lavignia",
+                "idade": "22",
+                "preco": 65
+            }
+        ],
+        "codigoReg": 6,
+        "valorTotal": 130
+    },
+    {
+        "associados": [
+            {
+                "nome": "José Pereira",
+                "idade": "41",
+                "preco": 40
+            },
+            {
+                "nome": "Maria Josefa",
+                "idade": "38",
+                "preco": 30
+            }
+        ],
+        "codigoReg": 2,
+        "valorTotal": 70
+    }
+]
