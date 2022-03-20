@@ -22,4 +22,4 @@ class RegistroBeneficiario {
   }
 }
 
-module.exports = RegistroBeneficiario
+export default RegistroBeneficiario

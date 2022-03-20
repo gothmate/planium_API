@@ -6,4 +6,4 @@ class Associado {
   }
 }
 
-module.exports = Associado
+export default Associado
