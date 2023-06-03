@@ -13,13 +13,13 @@ module.exports = function verificaPlano(obj) {
 
   jsonArray.push(obj)
 
-  for (let i = 0; i < jsonArray.length; i++) {
+  for (let arrayItem = 0; arrayItem < jsonArray.length; arrayItem++) {
     for (let index = 0; index < dataPlans.length; index++) {
-      if (jsonArray[i].codigoReg === dataPlans[index].codigo) {
+      if (jsonArray[arrayItem].codigoReg === dataPlans[index].codigo) {
         dataPrices.forEach(price => {
           if (dataPlans[index].codigo === price.codigo) {
-            if (jsonArray[i].associados.length >= price.minimo_vidas) {
-              jsonArray[i].associados.forEach(el => {
+            if (jsonArray[arrayItem].associados.length >= price.minimo_vidas) {
+              jsonArray[arrayItem].associados.forEach(el => {
                 if (el.idade >= 0 && el.idade < 18) {
                   el.preco = price.faixa1
                 } else if (el.idade >= 18 && el.idade < 41) {
@@ -34,9 +34,9 @@ module.exports = function verificaPlano(obj) {
       }
     }
 
-    jsonArray[i].valorTotal = 0
-    jsonArray[i].associados.forEach(item => {
-      jsonArray[i].valorTotal += item.preco
+    jsonArray[arrayItem].valorTotal = 0
+    jsonArray[arrayItem].associados.forEach(item => {
+      jsonArray[arrayItem].valorTotal += item.preco
     })
   }
 
@@ -46,5 +46,5 @@ module.exports = function verificaPlano(obj) {
     console.log(err)
   })
 
-  return true
+  return jsonArray[jsonArray.length - 1]
 }
