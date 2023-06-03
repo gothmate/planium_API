@@ -12,8 +12,8 @@ var verificaPlano = require('../services/plans')
 
 //Busca dados
 routes.get('/plans', (req, res) => {
-  return res.json(dataPlans)
-})
+	return res.json(dataPlans);
+});
 
 routes.get('/prices', (req, res) => {
   return res.json(dataPrices)
@@ -31,10 +31,6 @@ routes.post('/add_ben', (req, res) => {
     return res.status(400).end()
   }
 
-  if (!exceptionRegistroNotFound(req.body)) {
-    return res.status(400).send('Esse Plano é inexistente.')
-  }
-
   const ex = exceptionVidas(req.body)
   if (ex) {
     return res
@@ -42,8 +38,11 @@ routes.post('/add_ben', (req, res) => {
       .send('Número de usuários abaixo da exigência do plano.')
   }
 
-  verificaPlano(req.body)
-  return res.json(req.body)
+  const retorno = verificaPlano(req.body)
+
+  console.log("Retorno: ", retorno)
+  res.send(retorno)
+  return
 })
 
 module.exports = routes
